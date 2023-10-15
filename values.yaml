@@ -1,0 +1,22 @@
+ldap:
+    mail: mail
+    id: sAMAccountName
+    name: cn
+    url: ENC[AES256_GCM,data:7yREQcfqkE8QjgSuzxaLcrZwa2LeMTkbb/Pe2L72ZghzoGxK/yxPsq3tuA37xHnIEDLY9P8+cGDhCQh4ENnlPaa+XbQ=,iv:SATKOEg1oNKmh+e/H07/cJkeINg6D7izx43/hDIRSNU=,tag:pwbHtkl3Ep5/oB6HQ8Sl4A==,type:str]
+    insecure: true
+    bind-dn: ENC[AES256_GCM,data:6P6zuh0Kc1ortUpCsKxhEIKj4S5/SArSEKcLi/pBt2KwloB0xF9f5K540wu2kBP7pNU=,iv:AqcuHr3jxeEs/8crgUBbbFhgvPCIOwzvH6DKXFQDhdY=,tag:otNOxsJzrBn+ZbJTFAIsyA==,type:str]
+sops:
+    kms:
+        - arn: arn:aws:kms:eu-central-1:824196164719:key/19cb03db-2ac0-4c0e-b98f-b960604af8fa
+          created_at: "2023-10-15T19:10:31Z"
+          enc: AQICAHiNpBC1xYfZFuKgBmxhPA+q42Rwqcp8TDjMGamdbIADyAF83rwH6Rw9QHAPLIuG03Q6AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMUm6l3da1HyjYl2IGAgEQgDtRo3V4w3C354SAoDOD7bRiP0nxcoY167KCmjpF2+t3hldkaZUANANRTaonFCVVD1lCSqsJJ0926Ok80g==
+          aws_profile: ""
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2023-10-15T19:10:32Z"
+    mac: ENC[AES256_GCM,data:A6TBybQua4PXSNFvENooe5hNdjYFyiGZxxL15Ben/wfrmsyZ+zS+uKlwZqdkaKPX51gP79KmExquPHAEIwojtSKwItlVVvrv8+r3uhWj9SiYZbF3QdDgY5gxPkqxx2d0d3oeGfX/bG7qhNat1fonRgq557zur6mZYFRTpv//sGQ=,iv:RQurOPgHQMXJjlg/id6JabSG9H9cWyPkFl6Wok3ph5A=,tag:nsU4+9eBvC0mKTYFR9MkSA==,type:str]
+    pgp: []
+    encrypted_regex: ^(url|bind-dn)$
+    version: 3.8.1

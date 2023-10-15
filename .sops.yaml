@@ -1,0 +1,7 @@
+creation_rules:
+  - path_regex: .*.yaml
+    encrypted_regex: ^(url|bind-dn)$
+    key_groups:
+      - kms:
+        - arn: arn:aws:kms:eu-central-1:824196164719:key/19cb03db-2ac0-4c0e-b98f-b960604af8fa
+          aws_profile: service-account
